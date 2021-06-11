@@ -167,21 +167,22 @@ function calculate(command, a, b) {
   switch (command) {
     case "add":
       return a + b;
-      break;
+    // break;
     case "substract":
       return a - b;
-      break;
+    // break;
     case "divide":
       return a / b;
-      break;
+    // break;
     case "multiply":
       return a * b;
-      break;
+    // break;
     case "remainder":
       return a % b;
-      break;
+    // break;
     default:
-      return;
+      // return;
+      throw Error("Unknown command");
   }
 }
 
